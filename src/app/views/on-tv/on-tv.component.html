@@ -1,0 +1,66 @@
+<app-sidebar></app-sidebar>
+<app-skelten-loading *ngIf="!dataLoaded"></app-skelten-loading>
+
+<app-searched-shows (searchEvent)="receiveMessage($event)"></app-searched-shows>
+
+<div *ngIf="!searchLoaded">
+
+    <div *ngIf=" dataLoaded ">
+        <h6 class="text-lg font-semibold  pl-10  ">On TV Shows</h6>
+
+        <div>
+            <!-- <app-sidebar></app-sidebar> -->
+            <div class="mb-5">
+                <div class="flex flex-wrap  justify-start  mx-10">
+                    <div class="mediaItem flex-none ml-8" *ngFor="let show of shows| paginate:{itemsPerPage:size, currentPage:page, totalItems:totalResults}; let i=index ">
+                        <div>
+                            <div class="cardTop">
+                                <!-- <div class="dots" (click)="visiblityStatus()">
+                            <a href="#">
+                                <div></div>
+                                <img src='/assets/dots.svg'> 
+                        </a>
+                    </div> -->
+                                <!-- <div class="optionList">
+                            <ul>
+                                <li>
+                                    <a href="#"> Add To List</a>
+                                </li>
+                                <li>
+                                    <a href="#">Favorite </a></li>
+                                <li>
+                                    <a href="#">Watchlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Your Rating</a>
+                                </li>
+                            </ul>
+                        </div> -->
+                                <a routerLink="/tvshow/{{show.id}}/{{show.name}}"><img class="rounded-lg h-64" src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ show.poster_path }} " alt="{{ show.title }} " />
+                                </a>
+                            </div>
+                            <div class="content relative ">
+                                <div class=" persent absolute ">
+                                    <span>{{votingPercents[i]}} <fa-icon [icon]="faPercent"></fa-icon></span>
+                                </div>
+
+                                <a routerLink="/tvshow/{{show.id}}/{{show.name}}" title="{{show.name}}">
+                                    <h3 class="font-bold ">{{ show.title }}{{ show.name }}</h3>
+                                </a>
+                                <p>
+                                    {{ show.release_date | date }}{{ show.first_air_date | date }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center text-sm mt-5">
+                    <pagination-controls previousLabel="Prev" nextLabel="Next" (pageChange)="changeData($event)">
+
+                    </pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

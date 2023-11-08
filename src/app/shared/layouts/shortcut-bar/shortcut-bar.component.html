@@ -1,0 +1,102 @@
+<!--for Movies Section-->
+<div>
+    <div class="shortcutbar">
+        <ul class="flex items-center relative h-full">
+            <li class="navHead">
+                <a routerLink="/movie">Popular </a>
+            </li>
+            <li class="navHead">
+                <a routerLink="/movie/now-playing">Now Playing </a>
+            </li>
+
+            <li class="navHead">
+                <a routerLink="/movie/upcoming">Upcoming </a>
+            </li>
+
+            <li class="navHead">
+                <a routerLink="/movie/top-rated">Top Rated</a>
+            </li>
+
+
+            <!-- <app-searched-items [searchItems]="searchResults"></app-searched-items> -->
+            <!-- <li class="navHead ">
+
+                <a href='#'>
+                    Genres Options
+                </a>
+                <div>
+                    <ul>
+                        <li *ngFor="let genre of genres; let i=index ">
+                            <a routerLink="/movies/{{genre.id}}/{{genre.name}} ">{{genre.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" relative inline-block text-left ">
+                    <div>
+                        <button type="button " class="genreHead inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 " id="menu-button
+                        " aria-expanded="true " aria-haspopup="true ">
+                        Genres Options
+                        <svg class="-mr-1 h-5 w-5 text-gray-400 " viewBox="0 0 20 20 " fill="currentColor " aria-hidden="true ">
+                          <path fill-rule="evenodd " d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z " clip-rule="evenodd " />
+                        </svg>
+                      </button>
+                    </div> -->
+
+            <!--
+                      Dropdown menu, show/hide based on menu state.
+                  
+                      Entering: "transition ease-out duration-100 "
+                        From: "transform opacity-0 scale-95 "
+                        To: "transform opacity-100 scale-100 "
+                      Leaving: "transition ease-in duration-75 "
+                        From: "transform opacity-100 scale-100 "
+                        To: "transform opacity-0 scale-95 "
+                    -->
+            <!-- <div class=" dropMenu absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ">
+                <div class="py-1 " *ngFor="let genre of genres; let i=index "> -->
+            <!-- Active: "bg-gray-100 text-gray-900 ", Not Active: "text-gray-700 " -->
+            <!-- <a routerLink="/movies/{{genre.id}}/{{genre.name}} " class="text-gray-700 block px-4 py-2 text-sm ">{{ genre.name }}</a>
+
+    </div>
+</div>
+</div> -->
+
+            <!-- <form>
+                    <select class="py-1 px-3 bg-darkblue text-white rounded " id="sort ">
+                    <option   class="border-0 py-2.5 h-5 " *ngFor="let genre of genres; let i=i ndex "  >
+                   <a routerLink="/movies/{{genre.id}}/{{genre.name}} ">{{genre.id}}{{ genre.name }}</a> 
+                    </option>
+                 </select>
+                </form> -->
+            <!-- </li> -->
+        </ul>
+
+    </div>
+
+
+
+</div>
+
+<!--for tvshows Section-->
+
+<!-- <div *ngIf="tvShows ">
+    <div class="shortcutbar ">
+        <ul class=" flex items-center relative h-full ">
+            <li class="navHead ">
+                <a routerLink="/tvshows ">Popular </a>
+            </li>
+
+            <li class="navHead ">
+                <a>Airing Today </a>
+            </li>
+
+            <li class="navHead ">
+                <a>On TV </a>
+            </li>
+            <li class="navHead ">
+                <a>Top Rated</a>
+            </li>
+        </ul>
+    </div>
+
+</div> -->

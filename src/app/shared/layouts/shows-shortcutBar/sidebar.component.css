@@ -1,0 +1,42 @@
+.shortcutbar {
+    height: 46px;
+    /* box-shadow: ; */
+}
+
+.shortcutbar ul {
+    justify-content: center;
+}
+
+.navHead {
+    margin-right: 40px;
+    font-size: 20px;
+    /* width: fit-content */
+}
+
+.navHead a:hover {
+    height: 100%;
+    color: rgba(33, 37, 41, 0.7);
+    cursor: pointer;
+}
+
+.dropMenu {
+    top: 30px;
+    z-index: 100;
+    display: none;
+    height: fit-content;
+    /* visibility: hidden; */
+}
+
+.dropMenu li a {
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.navHead:hover .dropMenu {
+    display: block;
+}
+
+.dropMenu li:hover {
+    background-color: #f8f9fa;
+    /* color: #16181b; */
+}

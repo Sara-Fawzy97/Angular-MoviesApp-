@@ -1,0 +1,91 @@
+<app-shortcut-bar></app-shortcut-bar>
+
+<div class="movieSection mt-5" [ngStyle]=" { 'background-image': 'url('+path+movie.backdrop_path+ ')'} ">
+    <div class="my-10" style=" padding: 10px;" *ngIf="!isLoaded">
+        <ngx-skeleton-loader animation="progress" count="4" [theme]="{ 
+            'border-radius': '5px',
+            height: '10px',
+            'background-color': 'rgb(3, 37, 65,.5) '
+            
+          }"></ngx-skeleton-loader>
+    </div>
+    <div class="movieContent flex text-white " *ngIf="isLoaded">
+        <div class="posterSection ">
+            <img src="https://www.themoviedb.org/t/p/w300_and_h450_face/{{ movie.poster_path }} " alt="{{ movie.title }} " title="{{ movie.title }} " />
+            <div class="blackHover ">
+                <a href="# " class="text-white "><span>
+            <img src="/assets/zoom.svg " /> </span
+          >Expand</a
+        >
+      </div>
+    </div>
+    <div class="movieData ">
+      <div class="pl-10 ">
+        <div class="movieHeading ">
+          <h2>
+            {{ movie.title }}
+            <span>({{ movie.release_date | date : "yyyy" }})</span>
+          </h2>
+          <div class="flex ">
+            <p>{{ movie.release_date | date : "M/d/yyyy " }}</p>
+            <ul class="flex ">
+              <li *ngFor="let genre of genres; let i=index ">
+                <a routerLink="/movies/{{genre.id}}/{{genre.name}}">{{ genre.name }}</a>
+                </li>
+                </ul>
+                <div class="runTime ">{{ runtime | date : "h:m " }}</div>
+            </div>
+        </div>
+        <div class="actions ">
+            <div class="flex ">
+                <div class="persent flex justify-center ">
+                    <span>{{ votingPercent }} <fa-icon [icon]="faPercent "></fa-icon></span>
+
+
+                </div>
+                <p>
+                    User<br /> Score
+                </p>
+
+                <ul class="flex ">
+                    <li>
+                        <a href="# ">
+                            <fa-icon [icon]="listIcon "></fa-icon>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="# ">
+                            <fa-icon [icon]="faHeart "></fa-icon>
+
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="# ">
+                            <fa-icon [icon]="faBookmark "></fa-icon>
+
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="# ">
+                            <fa-icon [icon]="faStar "></fa-icon>
+
+                        </a>
+
+                    </li>
+                </ul>
+                <a href="# ">
+                    <span> <fa-icon [icon]="arrowIcon "></fa-icon> </span> Play Trailer</a>
+            </div>
+        </div>
+        <div>
+            <h4>{{ movie.tagline }}</h4>
+            <h3>Overview</h3>
+            <p>{{ movie.overview }}</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>

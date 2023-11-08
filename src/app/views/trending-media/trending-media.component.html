@@ -1,0 +1,67 @@
+<div class="pt-7 trendingSection">
+    <div>
+        <div class="flex px-10">
+            <h2 class="mr-5">Trending Movies</h2>
+            <div class="selector flex justify-start">
+                <div class="relative ">
+                    <button class="toggleBtn selected" [ngClass]=" [class] " (click)="toggeledEvent() " (click)="getAlltrending() ">Today</button>
+                    <div class="background absolute "></div>
+                </div>
+                <div>
+                    <button class="toggleBtn" [ngClass]="[class] " (click)="toggeledEvent() " (click)="getWeeklyTrending() ">This Week</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="py-5 ">
+            <div class="cards flex justify-items-start fadeIn" [ngClass]="[fade]" onscroll="isScroll()">
+
+                <div class="mediaItem  " *ngFor="let media of medias; let i=index ">
+                    <div class="cardTop">
+                        <!-- <div class="dots" (click)="visiblityStatus()">
+                            <a href="#">
+                                <div></div>
+                                <img src='/assets/dots.svg'>
+                            </a>
+                        </div> -->
+                        <!--
+                        <div class="optionList">
+                            <ul>
+                                <li>
+                                    <a href="#"> Add To List</a>
+                                </li>
+                                <li>
+                                    <a href="#">Favorite </a></li>
+                                <li>
+                                    <a href="#">Watchlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Your Rating</a>
+                                </li>
+                            </ul>
+                        </div>-->
+                        <a routerLink="/movie/{{media.id}}/{{media.title}} "><img class="rounded-lg " src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ media.poster_path }} " alt="{{ media.title }} " />
+                        </a>
+                    </div>
+
+                    <div class="content relative ">
+                        <div class=" persent absolute ">
+                            <span>{{votingPercents[i] }} <fa-icon [icon]=" faPercent "></fa-icon></span>
+                        </div>
+
+                        <a routerLink="/movie/{{media.id}}/{{media.title}} ">
+                            <h3 class="font-bold ">{{ media.title }}{{ media.name }}</h3>
+                        </a>
+                        <p>
+                            {{ media.release_date | date }}{{ media.first_air_date | date }}
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

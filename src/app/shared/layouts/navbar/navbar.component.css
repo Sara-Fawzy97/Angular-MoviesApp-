@@ -1,0 +1,29 @@
+.navHead :first-child {
+    font-weight: 600;
+}
+
+.dropMenu {
+    top: 50px;
+    display: none;
+    z-index: 101;
+    height: 100%;
+    /* visibility: hidden; */
+}
+
+.dropMenu li a {
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.navHead a:hover {
+    color: rgb(1, 180, 228);
+}
+
+.navHead:hover .dropMenu {
+    display: block;
+}
+
+.dropMenu li:hover {
+    background-color: #f8f9fa;
+    color: #16181b;
+}

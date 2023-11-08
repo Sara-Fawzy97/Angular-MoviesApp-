@@ -1,0 +1,37 @@
+<div class="min-h-full">
+    <nav class="bg-darkblue ">
+        <div class=" px-4">
+            <div class="flex h-[64px] justify-between">
+                <div class="flex justify-between">
+                    <a href="/" class="mr-3 mt-5"> <img src=" ./assets/logo.svg " alt="The Movie Database (TMDB) " width="145px " /></a>
+                    <ul class="flex space-x-4 items-center">
+                        <li class="navHead">
+                            <a class=" movieLink text-white relative p-2" routerLink="/movie">Movies</a>
+                        </li>
+                        <li class="navHead">
+                            <a class="tvLink relative text-white p-2" routerLink="/tvshows">TV Shows</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="flex text-white">
+                    <ul class="flex justify-between space-x-4 items-center ">
+                        <li>
+                            <a href="#">
+                                <fa-icon [icon]="bellIcon"></fa-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <fa-icon [icon]="faArrowRight"></fa-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

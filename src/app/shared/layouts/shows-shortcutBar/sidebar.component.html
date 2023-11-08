@@ -1,0 +1,83 @@
+<!-- <div class=" w-72  pl-10 pb-8 ">
+
+    <section [ngClass]="classStatus" (click)="fSection()">
+        <div class="flex justify-between pr-8 ">
+            <h2>Sort</h2>
+            <a href="#" class="py-3.5">
+                <fa-icon [icon]="arrowIcon"></fa-icon>
+            </a>
+        </div>
+        <form>
+            <label for="sort">Sort Results By</label>
+            <select class="py-1.5 px-3 bg-gray rounded w-56" id="sort">
+            <option value="Popularity Descending">Popularity Descending</option>
+            <option value="Popularity Ascending">Popularity Ascending</option>
+            <option value="Rating Descending">Rating Descending</option>
+            <option value="Rating Ascending">Rating Ascending</option>
+            <option value="Release Date Descending">Release Date Descending</option>
+            <option value="Release Date Ascending">Release Date Ascending</option>
+            <option value="Title (A-Z)">Title (A-Z)</option>
+        </select>
+        </form>
+    </section>
+    <section [ngClass]="activeClass" (click)="sSection()">
+        <div class="flex justify-between pr-8 ">
+            <h2>Filters</h2>
+            <a href="#" class="py-3.5">
+                <fa-icon [icon]="arrowIcon"></fa-icon>
+            </a>
+        </div>
+        <form>
+            <p>Show Me</p>
+            <input type="radio">
+            <label>Everything</label><br>
+            <input type="radio">
+            <label>Movies I Haven't Seen</label><br>
+            <input type="radio">
+            <label>Movies I Have Seen</label>
+        </form>
+
+    </section>
+    <section [ngClass]="activeStatus" (click)="tSection()">
+        <div class="flex justify-between pr-8 ">
+
+            <h2>Where To Watch</h2>
+            <a href="#" class="py-3.5">
+                <fa-icon [icon]="arrowIcon"></fa-icon>
+            </a>
+        </div>
+        <form>
+            <p>My Services</p>
+            <input type="checkbox">
+            <label>Restrict searches to my subscribed services?</label>
+        </form>
+    </section>
+
+    <div>
+        <button class="text-white w-full">Search</button>
+    </div>
+</div> -->
+
+<div>
+    <div class="shortcutbar">
+        <ul class="  flex items-center relative h-full">
+            <li class="navHead">
+                <a routerLink="/tvshows">Popular </a>
+            </li>
+
+            <li class="navHead">
+                <a routerLink="/tvshow/airing-today">Airing Today </a>
+            </li>
+
+            <li class="navHead">
+                <a routerLink="/tvshow/on-tv">On TV </a>
+            </li>
+            <li class="navHead">
+                <a routerLink="/tvshow/top-rated">Top Rated</a>
+            </li>
+
+
+        </ul>
+    </div>
+
+</div>

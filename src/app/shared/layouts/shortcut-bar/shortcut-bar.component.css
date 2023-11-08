@@ -1,0 +1,50 @@
+.shortcutbar {
+    height: 46px;
+}
+
+.shortcutbar ul {
+    justify-content: center;
+}
+
+.navHead {
+    margin-right: 40px;
+}
+
+.navHeadSelected {
+    color: blue;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.navHead a:hover {
+    color: rgba(33, 37, 41, 0.7);
+    cursor: pointer;
+}
+
+.dropMenu {
+    /*top: 30px;
+    */
+    /* opacity: 0; */
+    overflow: scroll;
+    height: 250px;
+}
+
+.dropMenu li a {
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.genreHead:hover .dropMenu {
+    opacity: 1;
+}
+
+
+/* .dropMenu li:hover {
+        background-color: #f8f9fa;
+        /* color: #16181b; */
+
+form {
+    width: 150px;
+    float: right;
+    margin-top: 50px;
+}
