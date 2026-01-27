@@ -16,10 +16,6 @@
     min-width: 300px;
     height: 450px;
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
     overflow: hidden;
     position: relative
 }
@@ -36,13 +32,8 @@
     top: 0;
     text-align: center;
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
     opacity: 0;
     transition: linear .2s;
-    -webkit-transition: linear .2s;
-    -moz-transition: linear .2s;
-    -ms-transition: linear .2s;
-    -o-transition: linear .2s;
     font-size: 1.3em;
     line-height: 450px;
 }
@@ -96,10 +87,6 @@ h2 span {
 .actions .persent:hover {
     cursor: pointer;
     transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
 }
 
 .actions .persent {
@@ -109,10 +96,6 @@ h2 span {
     text-align: center;
     align-items: center;
     transition: transform .2s;
-    -webkit-transition: transform .2s;
-    -moz-transition: transform .2s;
-    -ms-transition: transform .2s;
-    -o-transition: transform .2s;
 }
 
 .persent span fa-icon {
@@ -147,10 +130,6 @@ h2 span {
     justify-content: center;
     background-color: rgba(3, 37, 65, 1);
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 span fa-icon {

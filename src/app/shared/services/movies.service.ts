@@ -62,7 +62,7 @@ export class MoviesService {
   }
   
 getMultiSearched(searchString:string){
-  return this.http.get('https://api.themoviedb.org/3/search/movie'+this.apiKey+'&query=$'+searchString)
+  return this.http.get('https://api.themoviedb.org/3/search/movie'+this.apiKey+'&query='+searchString)
 }
-//https://api.themoviedb.org/3/search/movie?api_key=e3eb989751da8f50b437b44ab97b80ac&query=$barbie
+//https://api.themoviedb.org/3/search/movie?api_key=e3eb989751da8f50b437b44ab97b80ac&query=barbie
 }

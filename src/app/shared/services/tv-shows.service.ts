@@ -39,7 +39,7 @@ export class TvShowsService {
     return this.http.get(this.baseUrl+'tv/on_the_air'+this.apiKey+'&language=en-US&page='+page)
   }
   getTvSearched(searchString:string){
-    return this.http.get('https://api.themoviedb.org/3/search/tv'+this.apiKey+'&query=$'+searchString)
+    return this.http.get('https://api.themoviedb.org/3/search/tv'+this.apiKey+'&query='+searchString)
   }
   
 }
