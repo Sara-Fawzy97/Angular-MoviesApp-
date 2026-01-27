@@ -51,7 +51,6 @@ console.log(this.searchLoaded)
         console.log(this.movies);
         this.totalResults=res.total_results
         
-    
         for(let movie of this.movies){
           // console.log(movie.title)
           this.votes=movie.vote_average
