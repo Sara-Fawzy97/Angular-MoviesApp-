@@ -27,7 +27,7 @@
         "@fortawesome/free-solid-svg-icons": "^5.15.4",
         "apexcharts": "^3.39.0",
         "font-awesome": "^4.7.0",
-        "ng-apexcharts": "^1.7.5",
+        "ng-apexcharts": "1.7.5",
         "ngx-pagination": "^6.0.3",
         "ngx-skeleton-loader": "^5.0.0",
         "rxjs": "~7.5.0",
